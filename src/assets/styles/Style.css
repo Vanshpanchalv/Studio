@@ -1,0 +1,299 @@
+* {
+  font-family: "Afacad Flux", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.margin{
+  height: 12vh;
+}
+/* Default transparent navbar */
+.navbar-transparent {
+  background-color: transparent; /* Transparent background */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Navbar background color when scrolled */
+.navbar-scroll {
+  background-color: #ffffff; /* White background when scrolled */
+  transition: background-color 0.3s ease;
+}
+
+/* Text color classes */
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.navbar {
+  padding: 1rem 2rem;
+  position: fixed; /* Keeps the navbar fixed at the top */
+  top: 0;
+  width: 100%; /* Full width to cover the entire top area */
+  z-index: 10; /* Ensures the navbar stays above other content */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  font-family: 'Caveat', cursive;
+  margin: 0;
+}
+
+.brand small {
+  display: block;
+  color: black;
+  font-size: 0.9rem;
+  margin-left: 10%;
+}
+
+.nav-links {
+  display: flex; /* Flex display for nav links */
+  align-items: center; /* Center items vertically */
+}
+
+.nav-links a {
+  margin: 0 15px;
+  font-size: 1.2rem;
+  color: #f9f9f9;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative; /* Position for hover effect */
+}
+
+.nav-links a:hover {
+  color: #ff4081;
+}
+
+/* Active Link Styles */
+.nav-links a.active {
+  border-bottom: 2px solid #ff4081; /* Highlight active link */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem; /* Smaller padding on mobile */
+  }
+
+  .brand h1 {
+    font-size: 2rem; /* Reduce brand font size */
+  }
+
+  .brand small {
+    margin-left: 0; /* Adjust margin */
+    text-align: center; /* Center align on small screens */
+  }
+
+  .nav-links a {
+    font-size: 1.1rem; /* Smaller font size on mobile */
+  }
+}
+
+/*--------------- Footer----------------------- */
+.simple-footer {
+  color: #6c757d; /* Light grey text color */
+  font-family: Arial, sans-serif; /* Choose a clean font */
+}
+
+.footer-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000; /* Darker text color for brand */
+}
+
+.footer-tagline {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #6c757d; /* Subtle grey for tagline */
+  margin-bottom: 1rem;
+}
+
+.footer-address, .footer-contact {
+  font-size: 1rem;
+  color: #6c757d;
+  margin: 0.25rem 0;
+}
+
+.footer-contact a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-contact a:hover {
+  color: #343a40; /* Darker on hover */
+}
+
+/*--------------- Home Page Video----------------------- */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.home-video {
+  position: relative;
+  width: 100vw;  /* Ensure full viewport width */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent overflow */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+}
+
+.video-background {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Cover the area while maintaining aspect ratio */
+}
+
+.service-section {
+  padding: 2rem 1rem; /* Adjust padding for smaller screens */
+}
+
+.service-title {
+  font-size: 1.8rem; /* Slightly smaller for mobile */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.service-description {
+  font-size: 1rem; /* Adjust font size for smaller screens */
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.service-section img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.gallery-item {
+  margin-bottom: 15px; /* Adjust spacing */
+  padding: 0 5px; /* Add horizontal padding to prevent overflow */
+}
+
+/* Media Queries */
+@media (min-width: 576px) {
+  .service-title {
+    font-size: 2rem; /* Increase font size for medium devices and up */
+  }
+
+  .service-description {
+    font-size: 1.1rem; /* Increase font size for medium devices and up */
+  }
+}
+
+@media (min-width: 992px) {
+  .service-title {
+    font-size: 2.5rem; /* Increase font size for larger devices */
+  }
+
+  .service-description {
+    font-size: 1.2rem; /* Increase font size for larger devices */
+  }
+}
+/*-------------------Blogs-------------------*/
+/* Blogs.css */
+.blogs-container h2 {
+  font-family: 'Georgia', serif;
+  color: #6c757d; /* A muted color similar to what's shown */
+  font-size: 1.5rem;
+}
+
+.blogs-container p {
+  font-family: 'Georgia', serif;
+  color: #6c757d;
+}
+
+.blogs-container a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.blogs-container a:hover {
+  color: #343a40;
+}
+/*--------------Contect------------*/
+/* Contact page styling */
+.contact-section {
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  color: #333; /* Dark text color */
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.contact-form .form-control::placeholder {
+  color: #999;
+}
+
+.btn-submit {
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.btn-submit:hover {
+  background-color: #333;
+}
+
+.status-message {
+  font-size: 1rem;
+  color: #28a745; /* Success message color */
+  margin-top: 1rem;
+}
